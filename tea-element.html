@@ -14,20 +14,20 @@ Element providing solution to no problem in particular.
 
 ##### Example
 
-    <seed-element></seed-element>
+    <tea-element></tea-element>
 
-@element seed-element
+@element tea-element
 @blurb Element providing solution to no problem in particular.
 @status alpha
-@homepage http://polymerlabs.github.io/seed-element
+@homepage http://polymerlabs.github.io/tea-element
 -->
-<polymer-element name="seed-element" attributes="notitle author">
+<polymer-element name="tea-element" attributes="notitle author">
 
   <template>
 
-    <link rel="stylesheet" href="seed-element.css">
+    <link rel="stylesheet" href="tea-element.css">
 
-    <h1>Hello from seed-element</h1>
+    <h1>Hello from tea-element</h1>
     <content></content>
 
   </template>
@@ -68,14 +68,14 @@ Element providing solution to no problem in particular.
        */
       sayHello: function(greeting) {
         var response = greeting || 'Hello World!';
-        return 'seed-element says, ' + response;
+        return 'tea-element says, ' + response;
       },
 
       /**
-       * The `seed-element-lasers-success` event is fired whenever we
+       * The `tea-element-lasers-success` event is fired whenever we
        * call fireLasers.
        *
-       * @event seed-element-lasers-success
+       * @event tea-element-lasers-success
        * @param {Object} detail
        *   @param {string} detail.sound An amazing sound.
        */
@@ -87,7 +87,7 @@ Element providing solution to no problem in particular.
        * @method fireLasers
        */
       fireLasers: function() {
-        this.fire('seed-element-lasers-success', { sound: 'Pew pew pew!' });
+        this.fire('tea-element-lasers-success', { sound: 'Pew pew pew!' });
       }
 
     });
